@@ -1,0 +1,11 @@
+.darkmode {
+    --nav-text: #b4aeae;
+    --body-text-color: #d7d2d2;
+    --bg-color: #252424;
+    --bg-color-second: #161515ea;
+    --nav-bg: rgba(38, 35, 35, 0.771);
+    --box-shadow: 0 0 6px rgba(3, 3, 3, 0.521);
+    --i-color: #fff;
+    --i-bg: #000;
+    --job-title-bg: #171616bd;
+}
