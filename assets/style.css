@@ -3,7 +3,7 @@
     --body-text-color: #2d2d2d;
     --bg-color: hsl(0, 0%, 100%);
     --bg-color-second: #e4e4e4;
-    --nav-bg: rgba(221, 216, 216, 0.639);
+    --nav-bg: rgb(233, 229, 229);
     --box-shadow: 0 0 6px rgba(0, 0, 0, 0.412);
     --i-color: #000;
     --i-bg: #fff;
@@ -77,13 +77,12 @@ nav ul li:first-child {
 
 .sidebar {
     z-index: 998;
-    overflow-y: scroll;
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     right: 0;
     height: 100vh;
     width: 300px;
-    backdrop-filter: blur(10px);
     background: var(--nav-bg);
     box-shadow: var(--box-shadow);
     display: none;
@@ -96,7 +95,7 @@ nav ul li:first-child {
 .sidebar_close i {
     width: auto;
     padding: .3rem;
-    border: 2px solid;
+    border: 2px solid var(--body-text-color);
     border-radius: 50%;
 }
 
@@ -255,6 +254,7 @@ p {
 @keyframes updown {
     from {
         transform: translateY(-1rem);
+        filter: drop-shadow(0 0 20px var(--body-text-color));
     }
 }
 
